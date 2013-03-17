@@ -1,0 +1,8 @@
+.draggable { cursor:pointer; display:inline }
+#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em;
+	border-top: 0;
+	overflow: inherit;
+}
