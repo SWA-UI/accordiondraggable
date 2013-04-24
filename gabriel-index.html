@@ -27,8 +27,22 @@
 				element_droppable: ".droppable"
 				});
 			});
+			
+			
+			
 		  </script>
-    </head>
+		  
+		    <style>
+		
+			    label, input { display:block; }
+			    input.text { margin-bottom:12px; width:95%; padding: .4em; }
+			    fieldset { padding:0; border:0; margin-top:25px; }
+			    h1 { font-size: 1.2em; margin: .6em 0; }
+			    #dialog-form{display: none;}
+			    .ui-dialog .ui-state-error { padding: .3em; }
+			    .validateTips { border: 1px solid transparent; padding: 0.3em; }
+		    </style>
+     </head>
     <body>
 
         <div class="header-container">
@@ -52,16 +66,16 @@
                        <h2>article header h1 uno</h2>
 						
                       <div>
-						<div class="draggable"><img src="http://4.bp.blogspot.com/-gbKA6TXpDU0/TbCCXePG0LI/AAAAAAAAAEw/sw7KNDOhrXo/s1600/php_icon.png"/></div>
-						<div class="draggable"><img src="http://avatar.identi.ca/5199-96-20091009045158.jpeg"/></div>
+						<div class="draggable"><img src="http://4.bp.blogspot.com/-gbKA6TXpDU0/TbCCXePG0LI/AAAAAAAAAEw/sw7KNDOhrXo/s1600/php_icon.png" height="40"/><span>$10</span></div>
+						<div class="draggable"><img src="http://avatar.identi.ca/5199-96-20091009045158.jpeg" height="40" /><span>$10</span></div>
 					  </div>	
                     
                    
                         <h2>article section h2 dos</h2>
 						
                       <div>
-						<div class="draggable"><img src="http://www.drops.com.ar/images/temp/asp-icon.jpg"/></div>
-						<div class="draggable"><img src="http://riatec.lcc.uma.es/images/logos/tech/jquery.png"/></div>
+						<div class="draggable"><img src="http://www.drops.com.ar/images/temp/asp-icon.jpg" height="40"/><span>$15</span></div>
+						<div class="draggable"><img src="http://riatec.lcc.uma.es/images/logos/tech/jquery.png" height="40"/><span>$30</span></div>
 					  </div>
 						
                   
@@ -69,8 +83,8 @@
                         <h2>article section h2 tres</h2>
 						
                       <div>
-						<div class="draggable"><img src="http://www.hardcode.nl/hardcode/userfiles/2/icon_xml.gif"/></div>
-						<div class="draggable"><img src="http://blockchain.info/Resources/api_json.png"/></div>
+						<div class="draggable"><img src="http://www.hardcode.nl/hardcode/userfiles/2/icon_xml.gif" height="40"/><span>$20</span></div>
+						<div class="draggable"><img src="http://blockchain.info/Resources/api_json.png" height="40"/><span>$10</span></div>
 					  </div>
 						
                 
@@ -78,8 +92,8 @@
                         <h2>article footer h3 cuatro</h2>
 						
                        <div>
-						<div class="draggable"><img src="http://tumundotec.net/wp-content/uploads/icons/html-50x50.jpg"/></div>
-						<div class="draggable"><img src="http://www.vousys.com/images/web_plataformas/11752721511_9_css..png"/></div>
+						<div class="draggable"><img src="http://tumundotec.net/wp-content/uploads/icons/html-50x50.jpg" height="40"/><span>$15</span></div>
+						<div class="draggable"><img src="http://www.vousys.com/images/web_plataformas/11752721511_9_css..png" height="40"/><span>$30</span></div>
 					  </div>
 						
                     
@@ -89,6 +103,17 @@
                     <h3>aside</h3>
                     <p></p>
                 </aside>
+                
+                <div id="dialog-form" title="Create new user">
+				  <p class="validateTips">Cuantos quiere?</p>
+				 
+				  <form>
+				  <fieldset>
+				    <label for="name">Name</label>
+				    <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+				  </fieldset>
+				  </form>
+				</div>
 
             </div> <!-- #main -->
         </div> <!-- #main-container -->

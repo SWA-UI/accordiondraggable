@@ -1,6 +1,6 @@
 $.widget("ui.acordion", {
 	  options: {
-	           accordion: true,
+	       accordion: true,
 		   draggable : true,
 		   droppable: true,
 		   element_accordion: ".accordion",
@@ -37,7 +37,28 @@ $.widget("ui.acordion", {
 						  drop: function( event, ui ) {
 					      var elemento_dragg = ui.draggable.clone();
 					      $(this).append(elemento_dragg);
-						  $(elemento_dragg).removeAttr("style").removeClass('draggable');				
+						  $(elemento_dragg).removeAttr("style").removeClass('draggable');	
+
+						  
+					     $( "#dialog-form" ).dialog({					  					
+					    	 modal: true,
+					         buttons: {
+					           Update: function() {
+					        	   if($("#name").val().match(/^\d+$/)){
+					        		   console.log($("#name").val());   
+					        	   }else{
+					        		   console.log("nunca nene");
+					        	   }
+						          
+						        },
+					           Close: function() {
+					             $( this ).dialog( "close" );
+					           }
+					         }
+						  });		 	 
+					
+    
+					
 					      }		
 					});
 			 }
