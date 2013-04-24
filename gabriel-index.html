@@ -18,9 +18,13 @@
 		<script src="js/gabriel-main.js"></script>
 		   <script>
 			$(function(){
-				$("article").acordion({
+				$("body").acordion({
 				accordion: true,
-				draggable: true
+				draggable: true,
+				droppable: true,
+                        	element_accordion: ".accordion",
+				element_draggable: ".draggable",
+				element_droppable: ".droppable"
 				});
 			});
 		  </script>
@@ -43,7 +47,7 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
 
-                <article>
+                <article class="accordion">
                    
                        <h2>article header h1 uno</h2>
 						
@@ -81,7 +85,7 @@
                     
                 </article>
 
-                <aside>
+                <aside class="droppable">
                     <h3>aside</h3>
                     <p></p>
                 </aside>
